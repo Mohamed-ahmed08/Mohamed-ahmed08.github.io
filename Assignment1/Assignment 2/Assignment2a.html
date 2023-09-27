@@ -124,22 +124,26 @@ Date: 17 September 2023
       <div class="further-info">
         <!-- insert images with srcsets and sizes -->
         <a href="https://www.mozilla.org/en-US/firefox/new/">
-          <img src="Images/firefox_logo-only_RGB.png" alt="bigger frame of the firefox logo" width="400" height="120">
+          <img src="Images/firefox_logo-only_RGB.png" alt="bigger frame of the firefox logo" width="400">
         </a>
         <a href="https://www.mozilla.org/">
-          <img src="Images/mozilla-dinosaur-head.png" alt="picture of a red head of a dinosaur" width="400" height="120">
+          <img src="Images/mozilla-dinosaur-head.png" alt="picture of a red head of a dinosaur" width="400">
         </a>
         <a href="https://addons.mozilla.org/">
-          <img src="Images/firefox-addons.jpg" alt="bigger frame of the firefox addons logo " width="400" height="120">
+          <img src="Images/firefox-addons.jpg" alt="bigger frame of the firefox addons logo " width="400">
         </a>
         <a href="https://developer.mozilla.org/en-US/">
-          <img src="Images/mdn.svg" alt="picture of a drawn dinosaur" width="400" height="120">
+          <img src="Images/mdn.svg" alt="picture of a drawn dinosaur" width="400" >
         </a>
         <div class="clearfix"></div>
       </div>
 
       <div class="red-panda">
         <!-- insert picture element -->
+        <picture>
+            <source media="(max-width:600px)" srcset="red-panda-landscape.jpg">
+            <img src="Images/red-panda.jpg" alt="picture of a red-panda">
+        </picture>
       </div>
 
     </main>
