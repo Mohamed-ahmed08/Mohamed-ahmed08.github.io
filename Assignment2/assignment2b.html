@@ -3,48 +3,53 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>Table template</title>
+    <title>Planets Data</title>
     <link href="minimal-table.css" rel="stylesheet" type="text/css">
   </head>
   <body>
-    <h1>Table template</h1>
-    <table border="1">
-      <caption>Table caption</caption>
+    <h1>Planets Data</h1>
 
+    <table border="1" >
+      <caption>Data about the planets of our solar system (planetary facts taken from <a href="https://nssdc.gsfc.nasa.gov/planetary/factsheet/" >NASA planetary factsheet</a></caption>
+      <colgroup>
+      <col span="2">
+      <col style="border : 2px solid black" >
+      <col span = "9">
+      </colgroup>
       <!-- row 1 -->
       <tr>
           <!-- row1, cell 1 & 2 -->
           <td colspan="2"></td>
 
           <!-- row1, cell 3 -->
-          <td>Name</td>
+          <th><b>Name</b></th>
 
           <!-- row1, cell 4 -->
-          <td> Mass(10*24KG)</td>
+          <th><b> Mass(10²⁴KG)</b></th>
 
           <!-- row1, cell 5 -->
-          <td>Diameter (KM)</td>
+          <th><b>Diameter (km)</b></th>
 
           <!-- row1, cell 6 -->
-          <td>Density (kg/m3)</td>
+          <th><b>Density (kg/m³)</b></th>
 
           <!-- row1, cell 7 -->
-          <td>Gravity (m/s2)</td>
+          <th><b>Gravity (m/s²)</b></th>
 
           <!-- row1, cell 8 -->
-          <td>Length of day (hours)</td>
+          <th><b>Length of day (hours)</b></th>
 
           <!-- row1, cell 9 -->
-          <td>Distance from Sun (10*8km)</td>
+          <th><b>Distance from Sun (10⁶km)</b></th>
 
           <!-- row1, cell 10 -->
-          <td>Mean temperature (C°)</td>
+          <th><b>Mean temperature (°C)</b></th>
 
           <!-- row1, cell 11 -->
-          <td>Number of moons</td>
+          <th><b>Number of moons</b></th>
 
           <!-- row1, cell 12 & 13 -->
-          <td colspan="3">Notes</td>
+          <th colspan="3"><b>Notes</b></th>
 
       
       </tr>
@@ -52,12 +57,12 @@
       <!-- row 2 -->
       <tr>
           <!-- row2, cell 1 & 2 -->
-          <td rowspan="4" colspan="2">Terrestial planets</td>
+          <th rowspan="4" colspan="2"><b>Terrestial planets </b></th>
 
         
 
           <!-- row2, cell 3-->
-          <td>Mercury</td>
+          <th><b>Mercury</b></th>
 
 
           <!-- row2, cell 4-->
@@ -92,7 +97,7 @@
       <!-- row 3 -->
       <tr>
           <!-- row3, cell 1 & 2 -->
-          <td>Venus</td>
+          <th><b>Venus</b></th>
 
           <!-- row3, cell 3 -->
           <td>4.87</td>
@@ -125,8 +130,8 @@
 
       <!-- row 4 -->
       <tr>
-        <!-- row4, cell 1 & 2 -->
-        <td>Earth</td>
+        <!-- row4, cell 1  -->
+        <th><b>Earth</b></th>
 
         <!-- row4, cell 3 -->
         <td>5.97</td>
@@ -159,8 +164,8 @@
 
     <!-- row 5 -->
     <tr>
-      <!-- row5, cell 1 & 2 -->
-      <td>Mars</td>
+      <!-- row5, cell 1 -->
+      <th><b>Mars</b></th>
 
       <!-- row5, cell 3 -->
       <td>0.642</td>
@@ -194,55 +199,193 @@
   <!-- row 6 -->
   <tr>
     <!-- row6, cell 1 -->
-    <td rowspan="4">Jovian planets</td>
+    <th rowspan="4"><b>Jovian planets</b></th>
 
     <!-- row6, cell 2 -->
-    <td rowspan="2">Gas giants</td>
+    <th rowspan="2"><b>Gas giants</b></th>
     
     <!-- row6, cell 3 -->
-    <td>Jupiter</td>
+    <th><b>Jupiter</b></th>
 
-    <!-- row6, cell 5 -->
+    <!-- row6, cell 4 -->
     <td>1898</td>
 
-    <!-- row6, cell 6 -->
+    <!-- row6, cell 5 -->
     <td>142.984</td>
 
-    <!-- row6, cell 7 -->
+    <!-- row6, cell 6 -->
     <td>1326</td>
 
-    <!-- row6, cell 8 -->
+    <!-- row6, cell 7 -->
     <td>23.1</td>
 
-    <!-- row6, cell 9 -->
+    <!-- row6, cell 8 -->
     <td>9.9</td>
 
-    <!-- row6, cell 10 -->
-    <td>2</td>
+  
 
-    <!-- row6, cell 11 -->
+    <!-- row6, cell 9 -->
     <td>778.6</td>
 
-    <!-- row6, cell 11 -->
+    <!-- row6, cell 10 -->
     <td>-110</td>
 
     <!-- row6, cell 11 -->
     <td>67</td>
 
-    <!-- row6, cell 11 -->
+    <!-- row6, cell 12 -->
     <td>The largest planet</td>
-
 
 </tr>
 
 
+<!-- row 7 -->
+<tr>
+  <!-- row7, cell 2 -->
+  <th><b>Saturn</b></th>
 
+  <!-- row7, cell 3 -->
+  <td>568</td>
+  
+  <!-- row7, cell 4 -->
+  <td>120,536</td>
 
+  <!-- row7, cell 5 -->
+  <td>687</td>
 
+  <!-- row7, cell 6 -->
+  <td>9.0</td>
 
+  <!-- row7, cell 7 -->
+  <td>10.7</td>
 
+  <!-- row7, cell 8 -->
+  <td>1433.5</td>
 
+  <!-- row7, cell 9 -->
+  <td>-140</td>
 
+  <!-- row7, cell 10 -->
+  <td>62</td>
+
+  
+
+  <!-- row7, cell 11 -->
+  <td></td>
+
+  
+
+</tr>
+
+<!-- row 8 -->
+<tr>
+  <!-- row8, cell 2 -->
+  <th rowspan="2"><b>Iced giants</b></th>
+
+  <!-- row8, cell 3 -->
+  <th>Uranus</b></th>
+  
+  <!-- row8, cell 4 -->
+  <td>86.8</td>
+
+  <!-- row8, cell 5 -->
+  <td>51,118</td>
+
+  <!-- row8, cell 6 -->
+  <td>1271</td>
+
+  <!-- row8, cell 7 -->
+  <td>8.7</td>
+
+  <!-- row8, cell 8 -->
+  <td>17.2</td>
+
+  <!-- row8, cell 9 -->
+  <td>2872.5</td>
+
+  <!-- row8, cell 10 -->
+  <td>-195</td>
+
+  <!-- row8, cell 11 -->
+  <td>27</td>
+
+  <!-- row8, cell 12 -->
+  <td></td>
+
+</tr>
+
+<!-- row 9 -->
+<tr>
+  
+  <!-- row9, cell 2 -->
+  <th><b>Neptune</b></th>
+  
+  <!-- row9, cell 3 -->
+  <td>102</td>
+
+  <!-- row9, cell 4 -->
+  <td>49.528</td>
+
+  <!-- row9, cell 5 -->
+  <td>1638</td>
+
+  <!-- row9, cell 5 -->
+  <td>11.0</td>
+
+  <!-- row9, cell 6 -->
+  <td>16.1</td>
+
+  <!-- row9, cell 7 -->
+  <td>4495.1</td>
+
+  <!-- row9, cell 8 -->
+  <td>-200</td>
+
+  <!-- row9, cell 9 -->
+  <td>14</td>
+
+  <!-- row9, cell 10 -->
+  <td></td>
+
+</tr>
+
+<!-- row 10 -->
+<tr>
+
+  <!-- row10, cell 1 & 2 -->
+  <th colspan="2"><b>Dwarf planets</b></th>
+  
+  <!-- row10, cell 3 -->
+  <th><b>Pluto</b></th>
+  
+  <!-- row10, cell 4 -->
+  <td>0.0146</td>
+
+  <!-- row10, cell 5 -->
+  <td>2,370</td>
+
+  <!-- row10, cell 6 -->
+  <td>2095</td>
+
+  <!-- row10, cell 7 -->
+  <td>0.7</td>
+
+  <!-- row10, cell 8 -->
+  <td>153.3</td>
+
+  <!-- row10, cell 9 -->
+  <td>5906.4</td>
+
+  <!-- row10, cell 10 -->
+  <td>-225</td>
+
+  <!-- row10, cell 11 -->
+  <td>5</td>
+
+  <!-- row10, cell 12 -->
+  <td>Declassified as a planet in 2008,but this <a href="https://nssdc.gsfc.nasa.gov/planetary/factsheet/plutofact.html">remains controversial.</a></td>
+
+</tr>
 
 
   </table>
