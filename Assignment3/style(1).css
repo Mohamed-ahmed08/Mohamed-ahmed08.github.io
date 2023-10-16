@@ -1,3 +1,8 @@
+/*Name:Mohamed Ahmed
+File: Assignment3c.html
+Date: 18 October 2023
+ Lab 3 css creating a website/ Web Development - Fundamentals
+*/
 /* General setup */
 
 * {
@@ -15,6 +20,7 @@ body {
 section {
   float: left;
   width: 50%;
+  
 }
 
 aside {
@@ -24,9 +30,38 @@ aside {
 
 nav {
   float: left;
-  width: 20%;
+  width: 100%;
+  padding-left: 2em;
+  line-height: 5;
+  flex: 100%;
+  display: flex;
+
 }
 
+nav ul {
+  padding: 2;
+  list-style-type: square;
+  flex: 2;
+  display: flex;
+  vertical-align: left;
+}
+
+nav li {
+  display: inline;
+  text-align: vertical;
+  flex: 1;
+}
+
+nav a, nav span {
+  display: list-item;
+  font-size: 2rem;
+  height: 2rem;
+  line-height: 1.7;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: black;
+
+}
 footer {
   clear: both;
 }
@@ -43,3 +78,40 @@ header, footer {
 }
 
 /* WRITE YOUR CODE BELOW HERE */
+
+header{
+  text-align: center;
+  font-family: sans-serif,;
+}
+
+
+
+a[href^="http"] {
+  background: url("Images/external-link-52.png") no-repeat 100% 0;
+  background-size: 16px 16px;
+  padding-right: 19px;
+  color:#a66;
+}
+
+
+
+
+a{
+  color: #a66;
+}
+
+a:link,
+a:visited,
+a:focus {
+  color:#a66;
+}
+
+a:hover {
+  background: burlywood;
+}
+
+a:active {
+  background: darkred;
+  color: white;
+  font-family: 'Times New Roman', Times, serif;
+}
