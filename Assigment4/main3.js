@@ -1,3 +1,7 @@
+// Name:Mohamed Ahmed
+//File: Assignment4d.html
+//Date: 11 November 2023
+ //Assignment 4d Adding features to our bouncing balls demo /web Development - Fundamentals
 // set up canvas
 
 const canvas = document.querySelector('canvas');
