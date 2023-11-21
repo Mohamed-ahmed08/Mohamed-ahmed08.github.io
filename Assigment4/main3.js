@@ -149,6 +149,12 @@ function loop() {
      ball.collisionDetect();
    }
 
+}
+evilBall.draw();
+evilBall.checkBounds();
+evilBall.collisionDetect();
+
+
    requestAnimationFrame(loop);
 }
 
