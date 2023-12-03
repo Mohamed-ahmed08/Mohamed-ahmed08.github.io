@@ -52,7 +52,7 @@ p, li, table {
 /* || header layout */
 
 div[class="nav"], article, footer, .secondary {
-  background-color: green;
+  background-color: white;
 }
 
 article, footer, .secondary {
@@ -247,4 +247,10 @@ audio {
 
 .comment-container li p:nth-child(2) {
   flex: 5;
+}
+
+/*button styles on hover and activation */
+button[type="submit"]:hover,
+button:hover{
+  background-color: black;
 }
