@@ -18,44 +18,60 @@ body {
 
 /* || typography */
 
-font[size="7"], font[size="6"], font[size="5"] {
+/* || typography */
+
+h1,
+h2,
+h3 {
   font-family: 'Sonsie One', cursive;
   color: #2a2a2a;
 }
 
-p, input, li, table, label {
+p,
+input,
+li,
+table,
+label,
+button {
   font-family: 'Open Sans Condensed', sans-serif;
   color: #2a2a2a;
 }
 
-font[size="7"] {
+h1 {
   font-size: 4rem;
   text-align: center;
-  color: white;
-  text-shadow: 2px 2px 10px black;
+  color: #2a2a2a;
+  text-shadow: 2px 2px 10px white;
 }
 
-font[size="6"] {
+h2 {
   font-size: 3rem;
   text-align: center;
 }
 
-font[size="5"] {
+h3 {
   font-size: 2.2rem;
 }
 
-p, li, table {
+p,
+li,
+table {
   font-size: 1.6rem;
   line-height: 1.5;
 }
 
 /* || header layout */
 
-div[class="nav"], article, footer, .secondary {
+nav,
+article,
+footer,
+.secondary {
   background-color: white;
 }
 
-article, footer, .secondary {
+article,
+footer,
+.secondary {
   padding: 10px 30px;
 }
 
@@ -63,28 +79,28 @@ article {
   margin-right: 10px;
 }
 
-div[class="nav"] {
+nav {
   height: 50px;
-  background-color: ff80ff;
+  background-color: white;
   display: flex;
   padding: 1% 0;
   margin-bottom: 10px;
 }
 
-div[class="nav"] ul {
+nav ul {
   padding: 0;
   list-style-type: none;
   flex: 2;
   display: flex;
 }
 
-div[class="nav"] li {
+nav li {
   display: inline;
   text-align: center;
   flex: 1;
 }
 
-div[class="nav"] a {
+nav a {
   display: inline-block;
   font-size: 2rem;
   text-transform: uppercase;
@@ -92,7 +108,7 @@ div[class="nav"] a {
   color: black;
 }
 
-div[class="nav"] .search {
+nav .search {
   flex: 1;
   display: flex;
   align-items: center;
@@ -100,7 +116,8 @@ div[class="nav"] .search {
   padding: 0 2em;
 }
 
-.search input {
+.search input,
+.search button {
   font-size: 1.6rem;
   height: 32px;
 }
@@ -109,12 +126,31 @@ div[class="nav"] .search {
   flex: 3;
 }
 
-.search input[type="submit"] {
+.search button[type="submit"] {
   flex: 1;
   margin-left: 1rem;
   background: #333;
   border: 0;
   color: white;
+  cursor: pointer;
+}
+
+/* || main layout */
+
+main {
+  display: flex;
+}
+
+article {
+  flex: 5;
+}
+
+.secondary {
+  flex: 2;
+}
+
+footer {
+  margin-top: 10px;
 }
 
 /* || main layout */
@@ -168,6 +204,32 @@ img, audio {
 
 audio {
   width: 500px;
+}
+
+/* Control transcript display */
+
+.transcript-container {
+  width: 480px;
+  margin: 10px auto;
+  border: 1px solid #dde;
+  min-height: 38px;
+  background-color: #dde;
+}
+
+.transcript {
+  height: 0;
+  width: 100%;
+  overflow: auto;
+  padding: 0 10px;
+}
+
+.transcript-container button {
+  width: 100%;
+  height: 36px;
+  background: #333;
+  border: 0;
+  color: white;
+  cursor: pointer;
 }
 
 /* Comments styling */
